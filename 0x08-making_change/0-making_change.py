@@ -3,17 +3,18 @@
 Module determines fewest number of coins needed to meet a given amount total
 """
 
+
+def lower_max(arr: list[int]) -> list[int]:
+    """removes highest number from array"""
+    new_arr = sorted(set(arr))
+    new_arr.pop()
+    return new_arr
+
+
 def makeChange(coins: list[int], total: int) -> int:
     """
     determines fewest number of coins needed to meet a given amount total
     """
-
-    
-    def lower_max(arr: list[int]):
-        """removes highest number from array"""
-        new_arr = sorted(set(arr))
-        new_arr.pop()
-        return new_arr
 
     if total <= 0:
         return 0
