@@ -5,11 +5,13 @@ Module determines fewest number of coins needed to meet a given amount total
 
 from typing import List
 
+
 def lower_max(arr: List[int]) -> List[int]:
     """removes highest number from array"""
     new_arr: List[int] = sorted(set(arr))
     new_arr.pop()
     return new_arr
+
 
 def makeChange(coins: List[int], total: int) -> int:
     """
