@@ -2,10 +2,8 @@
 """
 module creates a function returns the perimeter of island described in grid
 """
-from typing import List
 
-
-def island_perimeter(grid: List[List[int]]) -> int:
+def island_perimeter(grid: list[list[int]]) -> int:
     """function returns the perimeter of the island described in grid"""
     perimeter = 0
     rows = len(grid)
