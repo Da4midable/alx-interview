@@ -3,7 +3,8 @@
 module creates a function returns the perimeter of island described in grid
 """
 
-def island_perimeter(grid: list[list[int]]) -> int:
+
+def island_perimeter(grid):
     """function returns the perimeter of the island described in grid"""
     perimeter = 0
     rows = len(grid)
